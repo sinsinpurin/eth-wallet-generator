@@ -1,0 +1,6 @@
+pysha3==1.0.2
+coincurve==13.0.0
+inquirer==2.7.0
+wheel==0.34.2
+pyfiglet==0.8.post1
+openpyxl==3.0.3
