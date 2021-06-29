@@ -9,8 +9,8 @@ You can generate 1~100 Ethereum wallet.
 - Ethereum Address(no format)
 - Ethereum Address(format EIP-55)
 
-You can output console, .txt, .xlsx.
-.txt and .xlsx output in wallet directory.
+You can output console, .txt, .xlsx, .csv.
+.txt, .xlsx and .csv output in wallet directory.
 
 (!) If you generate file again, already created file will be overwrite.
 ## setup

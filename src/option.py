@@ -9,8 +9,7 @@ def setOption():
         inquirer.List(
             "output",
             message="How do you output?",
-            choices=["console", ".txt",
-                     ".xlsx"],
+            choices=["console", ".txt", ".xlsx", ".csv"],
             carousel=False,
         )
     ]

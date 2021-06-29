@@ -1,3 +1,4 @@
+import csv
 import openpyxl
 
 from src import generateAddress
@@ -23,6 +24,18 @@ def generateWallet(options):
             file.write(str(counter)+"\n")
             output.outputText(wallet, file)
             counter += 1
+        file.close()
+        print("Success generate!\n")
+
+    elif(options["output"] == ".csv"):
+        counter = 1
+        file = open("wallet/Wallet.csv", "w")
+        fieldnames = ['privateKey', 'publicKey', 'address', 'address(EIP-55)']
+        csvWriter = csv.DictWriter(file, fieldnames=fieldnames)
+        csvWriter.writeheader()
+        for i in range(int(options["num"])):
+            wallet = generateAddress.generateKey()
+            output.outputCSV(wallet, csvWriter)
         file.close()
         print("Success generate!\n")
 
