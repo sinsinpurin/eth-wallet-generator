@@ -19,7 +19,8 @@ You can output console, .txt, .xlsx, .csv.
 $> python setup.py install
 ```
 
-## generate wallet
+## How to use
+### generate wallet
 
 ```
 $> ethwalgen
