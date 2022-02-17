@@ -6,7 +6,7 @@ with open("README.md") as f:
 
 setup(
     name="eth_wallet_generater",
-    version="0.1.0",
+    version="0.1.1",
     description="this is Ethereum wallet generater.",
     long_description_content_type="text/markdown",
     long_description=long_description,

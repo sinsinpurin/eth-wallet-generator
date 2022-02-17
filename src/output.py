@@ -28,3 +28,6 @@ def outputXlsx(wallet, sheet, num):
     sheet.cell(row=num, column=3, value=wallet["publicKey"])
     sheet.cell(row=num, column=4, value=wallet["address"])
     sheet.cell(row=num, column=5, value=wallet["address(EIP-55)"])
+
+def outputCSV(wallet, csvWriter):
+    csvWriter.writerow({'privateKey': wallet["privateKey"], 'publicKey': wallet["publicKey"], 'address': wallet["address"], 'address(EIP-55)': wallet["address(EIP-55)"]})
